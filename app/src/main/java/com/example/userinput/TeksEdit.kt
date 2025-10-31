@@ -34,7 +34,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 
-fun FormDataDiri(modifier: Modifier, it: String){
+fun FormDataDiri(modifier: Modifier){
     //Variabel-varliabel untuk mengingat nilai masuukan dari keyboard
 
     var textNama by remember {mutableStateOf("")}
@@ -52,7 +52,7 @@ fun FormDataDiri(modifier: Modifier, it: String){
     var jenis by remember {mutableStateOf("")}
 
 
-    var gender: List<String> = listOf("Laki-laki","Perempuan")
+    val gender: List<String> = listOf("Laki-laki","Perempuan")
 
 
     Column(modifier = Modifier.padding(top = 50.dp),
