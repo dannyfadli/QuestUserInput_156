@@ -1,5 +1,6 @@
 package com.example.userinput
 
+import android.R
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -25,5 +26,8 @@ fun FormDataDiri(modifier: Modifier){
     var alamat by remember {mutableStateOf("")}
 
     var jenis by remember {mutableStateOf("")}
+
+
+    var gende: List<String> = listOf("Laki-laki","Perempuan")
 
 }
